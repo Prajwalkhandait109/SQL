@@ -1,1 +1,3 @@
-"# SQL" 
+# Daily SQL Practice
+## Lets go.....
+# Day 1
