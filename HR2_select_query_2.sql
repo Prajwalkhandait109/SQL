@@ -9,3 +9,9 @@ WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000;
 /*Query all columns (attributes) for every row in the CITY table.*/
 -- Solution :
 select * from city;
+
+-- Query all columns for a city in CITY with the ID 1661.
+-- Solution :
+select * from city
+where ID = 1661;
+
