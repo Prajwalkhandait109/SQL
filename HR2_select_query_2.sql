@@ -24,3 +24,15 @@ where COUNTRYCODE = 'JPN';
 -- Solution :
 select NAME from city
 where COUNTRYCODE = 'JPN';
+
+-- Query a list of CITY and STATE from the STATION table.
+--Solution :
+SELECT CITY, STATE FROM STATION;
+
+--Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+-- Solution :
+SELECT DISTINCT CITY
+FROM STATION
+WHERE MOD(ID, 2) = 0;
+
+--
