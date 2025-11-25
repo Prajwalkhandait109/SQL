@@ -87,3 +87,17 @@ WHERE CITY NOT LIKE 'A%'
   AND CITY NOT LIKE 'i%'
   AND CITY NOT LIKE 'o%'
   AND CITY NOT LIKE 'u%';
+
+--Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
+--Solution :
+select distinct city from station 
+where city like 'A%'
+or city like 'E%'
+or city like 'I%'
+or city like 'O%'
+or city like 'U%'
+or city like 'a%'
+or city like 'e%'
+or city like 'i%'
+or city like 'o%'
+or city like 'u%';
