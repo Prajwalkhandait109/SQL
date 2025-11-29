@@ -119,3 +119,19 @@ WHERE (CITY NOT LIKE 'A%' AND CITY NOT LIKE 'E%' AND CITY NOT LIKE 'I%' AND CITY
        AND CITY NOT LIKE 'a%' AND CITY NOT LIKE 'e%' AND CITY NOT LIKE 'i%' AND CITY NOT LIKE 'o%' AND CITY NOT LIKE 'u%')
    OR (CITY NOT LIKE '%A' AND CITY NOT LIKE '%E' AND CITY NOT LIKE '%I' AND CITY NOT LIKE '%O' AND CITY NOT LIKE '%U'
        AND CITY NOT LIKE '%a' AND CITY NOT LIKE '%e' AND CITY NOT LIKE '%i' AND CITY NOT LIKE '%o' AND CITY NOT LIKE '%u');
+
+-- Query the list of CITY names from STATION that do not start with vowels and do not end with vowels. Your result cannot contain duplicates.
+-- Solution :
+SELECT distinct city from station 
+where 
+city not like 'a%'
+and city not like 'e%'
+and city not like 'i%'
+and city not like 'o%'
+and city not like 'u%'
+and city not like '%a'
+and city not like '%e'
+and city not like '%i'
+and city not like '%o'
+and city not like '%u';
+
