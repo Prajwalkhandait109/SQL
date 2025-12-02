@@ -140,3 +140,8 @@ and city not like '%u';
 SELECT Name from STUDENTS
 where Marks > 75
 ORDER BY RIGHT (Name,3), ID ;
+
+-- Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+-- Solution :
+select name from Employee 
+order by name asc;
